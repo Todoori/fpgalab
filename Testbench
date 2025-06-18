@@ -1,0 +1,29 @@
+`timescale 1ns/1ps
+module uart_tx_tb;
+    reg clk = 0, rst = 1, tvalid = 0;
+    reg [7:0] tdata = 8'h00;
+    wire tready, tx;
+
+    uart_tx uut (
+        .clk(clk),
+        .rst(rst),
+        .tdata(tdata),
+        .tvalid(tvalid),
+        .tready(tready),
+        .tx(tx)
+    );
+
+    always #10 clk = ~clk; // 50 MHz
+
+    initial begin
+        #50 rst = 0;
+        #50 tdata = 8'hA5; tvalid = 1;
+        #20 tvalid = 0;
+        #200000 $finish;
+    end
+
+    initial begin
+        $dumpfile("uart_tx_tb.vcd");
+        $dumpvars(0, uart_tx_tb);
+    end
+endmodule

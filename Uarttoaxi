@@ -1,0 +1,116 @@
+module uart_tx_axi #(
+    parameter TDATA_WIDTH = 8,  // Configurable data width (must be divisible by 8)
+    parameter BAUD_DIV = 434    // For 115200 baud at 50MHz clock
+)(
+    // Clock and Reset
+    input  logic                    clk,
+    input  logic                    rst,
+    
+    // AXI-Stream Slave Interface
+    input  logic [TDATA_WIDTH-1:0]  s_axis_tdata,
+    input  logic                    s_axis_tvalid,
+    input  logic                    s_axis_tlast,
+    output logic                    s_axis_tready,
+    
+    // UART Output
+    output logic                    tx_out
+);
+
+    // State machine definition
+    typedef enum logic [2:0] {
+        IDLE,
+        START,
+        DATA_BIT,
+        STOP
+    } uart_state_t;
+    
+    // Internal registers
+    uart_state_t state;
+    logic [TDATA_WIDTH-1:0] data_reg;
+    logic [15:0] baud_counter;
+    logic [$clog2(TDATA_WIDTH/8)-1:0] byte_counter;
+    logic [7:0] current_byte;
+    logic [2:0] bit_counter;
+    
+    // Calculate the number of bytes in TDATA
+    localparam BYTES_IN_TDATA = TDATA_WIDTH / 8;
+    
+    // Main state machine
+    always_ff @(posedge clk or posedge rst) begin
+        if (rst) begin
+            state <= IDLE;
+            tx_out <= 1'b1;
+            s_axis_tready <= 1'b0;
+            baud_counter <= '0;
+            byte_counter <= '0;
+            bit_counter <= '0;
+        end else begin
+            case (state)
+                IDLE: begin
+                    tx_out <= 1'b1;
+                    baud_counter <= '0;
+                    byte_counter <= '0;
+                    bit_counter <= '0;
+                    s_axis_tready <= 1'b1;
+                    
+                    if (s_axis_tvalid) begin
+                        data_reg <= s_axis_tdata;
+                        current_byte <= s_axis_tdata[7:0];
+                        s_axis_tready <= 1'b0;
+                        state <= START;
+                    end
+                end
+                
+                START: begin
+                    tx_out <= 1'b0;  // Start bit
+                    
+                    if (baud_counter >= BAUD_DIV - 1) begin
+                        baud_counter <= '0;
+                        state <= DATA_BIT;
+                    end else begin
+                        baud_counter <= baud_counter + 1'b1;
+                    end
+                end
+                
+                DATA_BIT: begin
+                    tx_out <= current_byte[bit_counter];
+                    
+                    if (baud_counter >= BAUD_DIV - 1) begin
+                        baud_counter <= '0;
+                        
+                        if (bit_counter == 7) begin
+                            state <= STOP;
+                            bit_counter <= '0;
+                        end else begin
+                            bit_counter <= bit_counter + 1'b1;
+                        end
+                    end else begin
+                        baud_counter <= baud_counter + 1'b1;
+                    end
+                end
+                
+                STOP: begin
+                    tx_out <= 1'b1;  // Stop bit
+                    
+                    if (baud_counter >= BAUD_DIV - 1) begin
+                        baud_counter <= '0;
+                        
+                        if (byte_counter >= BYTES_IN_TDATA - 1) begin
+                            state <= IDLE;
+                            s_axis_tready <= 1'b1;
+                        end else begin
+                            byte_counter <= byte_counter + 1'b1;
+                            current_byte <= data_reg[(byte_counter+1)*8 +: 8];
+                            state <= START;
+                        end
+                    end else begin
+                        baud_counter <= baud_counter + 1'b1;
+                    end
+                end
+                
+                default: state <= IDLE;
+            endcase
+        end
+    end
+
+endmodule
