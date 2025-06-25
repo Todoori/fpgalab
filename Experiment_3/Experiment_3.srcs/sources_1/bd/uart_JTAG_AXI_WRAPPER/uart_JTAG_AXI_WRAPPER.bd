@@ -1,0 +1,124 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0xF7F84D7709F19035",
+      "device": "xc7a100tcsg324-1",
+      "gen_directory": "../../../../Experiment_3.gen/sources_1/bd/uart_JTAG_AXI_WRAPPER",
+      "name": "uart_JTAG_AXI_WRAPPER",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2024.2"
+    },
+    "design_tree": {
+      "jtag_axi_0": "",
+      "clk_wiz": "",
+      "uart_axi_top_0": ""
+    },
+    "ports": {
+      "clk": {
+        "type": "clk",
+        "direction": "I",
+        "parameters": {
+          "FREQ_HZ": {
+            "value": "100000000"
+          }
+        }
+      },
+      "arstn": {
+        "type": "rst",
+        "direction": "I"
+      },
+      "tx_o": {
+        "type": "data",
+        "direction": "O"
+      }
+    },
+    "components": {
+      "jtag_axi_0": {
+        "vlnv": "xilinx.com:ip:jtag_axi:1.2",
+        "ip_revision": "20",
+        "xci_name": "uart_JTAG_AXI_WRAPPER_jtag_axi_0_0",
+        "xci_path": "ip\\uart_JTAG_AXI_WRAPPER_jtag_axi_0_0\\uart_JTAG_AXI_WRAPPER_jtag_axi_0_0.xci",
+        "inst_hier_path": "jtag_axi_0",
+        "parameters": {
+          "M_AXI_ID_WIDTH": {
+            "value": "1"
+          }
+        },
+        "interface_ports": {
+          "M_AXI": {
+            "vlnv": "xilinx.com:interface:aximm_rtl:1.0",
+            "mode": "Master",
+            "address_space_ref": "Data",
+            "base_address": {
+              "minimum": "0x00000000",
+              "maximum": "0xFFFFFFFF",
+              "width": "32"
+            }
+          }
+        },
+        "addressing": {
+          "address_spaces": {
+            "Data": {
+              "range": "4G",
+              "width": "32"
+            }
+          }
+        }
+      },
+      "clk_wiz": {
+        "vlnv": "xilinx.com:ip:clk_wiz:6.0",
+        "ip_revision": "15",
+        "xci_name": "uart_JTAG_AXI_WRAPPER_clk_wiz_0",
+        "xci_path": "ip\\uart_JTAG_AXI_WRAPPER_clk_wiz_0\\uart_JTAG_AXI_WRAPPER_clk_wiz_0.xci",
+        "inst_hier_path": "clk_wiz",
+        "parameters": {
+          "CLKOUT1_REQUESTED_OUT_FREQ": {
+            "value": "100.0"
+          },
+          "RESET_PORT": {
+            "value": "resetn"
+          },
+          "RESET_TYPE": {
+            "value": "ACTIVE_LOW"
+          }
+        }
+      },
+      "uart_axi_top_0": {
+        "vlnv": "xilinx.com:user:uart_axi_top:1.0",
+        "ip_revision": "2",
+        "xci_name": "uart_JTAG_AXI_WRAPPER_uart_axi_top_0_1",
+        "xci_path": "ip\\uart_JTAG_AXI_WRAPPER_uart_axi_top_0_1\\uart_JTAG_AXI_WRAPPER_uart_axi_top_0_1.xci",
+        "inst_hier_path": "uart_axi_top_0",
+        "interface_ports": {
+          "s_axi": {
+            "vlnv": "xilinx.com:interface:aximm_rtl:1.0",
+            "mode": "Slave",
+            "memory_map_ref": "s_axi"
+          }
+        }
+      }
+    },
+    "nets": {
+      "arstn_1": {
+        "ports": [
+          "arstn",
+          "jtag_axi_0/aresetn",
+          "clk_wiz/resetn"
+        ]
+      },
+      "clk_1": {
+        "ports": [
+          "clk",
+          "clk_wiz/clk_in1"
+        ]
+      },
+      "clk_wiz_clk_out1": {
+        "ports": [
+          "clk_wiz/clk_out1",
+          "jtag_axi_0/aclk"
+        ]
+      }
+    }
+  }
+}

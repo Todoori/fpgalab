@@ -1,0 +1,56 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Mon Jun  2 18:26:59 2025
+# Process ID         : 35652
+# Current directory  : C:/Users/moham/Desktop/Fpga/Experiment_3/Experiment_3.srcs/utils_1/imports/synth_1
+# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent66504 C:\Users\moham\Desktop\Fpga\Experiment_3\Experiment_3.srcs\utils_1\imports\synth_1\top_VGA_Screen.dcp
+# Log file           : C:/Users/moham/Desktop/Fpga/Experiment_3/Experiment_3.srcs/utils_1/imports/synth_1/vivado.log
+# Journal file       : C:/Users/moham/Desktop/Fpga/Experiment_3/Experiment_3.srcs/utils_1/imports/synth_1\vivado.jou
+# Running On         : moham
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26100
+# Processor Detail   : AMD Ryzen 9 8945HS w/ Radeon 780M Graphics
+# CPU Frequency      : 3992 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 16
+# Host memory        : 29843 MB
+# Swap memory        : 23318 MB
+# Total Virtual      : 53162 MB
+# Available Virtual  : 6292 MB
+#-----------------------------------------------------------
+start_gui
+open_checkpoint C:/Users/moham/Desktop/Fpga/Experiment_3/Experiment_3.srcs/utils_1/imports/synth_1/top_VGA_Screen.dcp
+Command: open_checkpoint C:/Users/moham/Desktop/Fpga/Experiment_3/Experiment_3.srcs/utils_1/imports/synth_1/top_VGA_Screen.dcp
+
+Starting open_checkpoint Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.063 . Memory (MB): peak = 1276.543 ; gain = 13.871
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at C:/Xilinx/Vivado/2024.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at C:/Xilinx/Vivado/2024.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at C:/Xilinx/Vivado/2024.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2024.2/data/ip'.
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1805.520 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 37 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2024.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Read ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1895.746 ; gain = 0.137
+INFO: [Project 1-1714] 2 XPM XDC files have been applied to the design.
+CRITICAL WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'clk_wiz_0' instantiated as 'vga_inst/clk_wiz_i' [C:/Users/moham/Desktop/Fpga/Experiment_3/Experiment_3.srcs/sources_1/imports/sources_1/imports/Downloads/vga_top.sv:26]
+CRITICAL WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'clk_wiz_1' instantiated as 'u_i2s/u_clk_wiz_0' [C:/Users/moham/Desktop/Fpga/Experiment_3/Experiment_3.srcs/sources_1/imports/sources_1/imports/Downloads/i2s_interface.sv:42]
+CRITICAL WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'sqrt_cordic' instantiated as 'fft_top_IN/abs_value_i/sqrt_i' [C:/Users/moham/Desktop/Fpga/Experiment_3/Experiment_3.srcs/sources_1/imports/sources_1/fft_top.sv:377]
+CRITICAL WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'xfft_0' instantiated as 'fft_top_IN/u_serial_fft/u_fft' [C:/Users/moham/Desktop/Fpga/Experiment_3/Experiment_3.srcs/sources_1/imports/sources_1/fft_top.sv:325]
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2420.805 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Project 1-604] Checkpoint was created with Vivado v2024.2 (64-bit) build 5239630
+open_checkpoint: Time (s): cpu = 00:00:46 ; elapsed = 00:00:28 . Memory (MB): peak = 2762.332 ; gain = 1519.605
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Jun  2 18:28:43 2025...

@@ -1,0 +1,12 @@
+set_property SRC_FILE_INFO {cfile:C:/Users/moham/Desktop/Fpga/Experiment_3/Experiment_3.srcs/constrs_1/imports/imports/new/timing.xdc rfile:../../../Experiment_3.srcs/constrs_1/imports/imports/new/timing.xdc id:1} [current_design]
+set_property SRC_FILE_INFO {cfile:C:/Users/moham/Desktop/Fpga/Experiment_3/Experiment_3.srcs/constrs_1/imports/imports/Downloads/Nexys-A7-100T-Master.xdc rfile:../../../Experiment_3.srcs/constrs_1/imports/imports/Downloads/Nexys-A7-100T-Master.xdc id:2} [current_design]
+set_property src_info {type:XDC file:1 line:15 export:INPUT save:INPUT read:READ} [current_design]
+set_false_path -to [get_ports LED*]
+set_property src_info {type:XDC file:1 line:16 export:INPUT save:INPUT read:READ} [current_design]
+set_false_path -to [get_cells */*async_reg*]
+set_property src_info {type:XDC file:2 line:8 export:INPUT save:INPUT read:READ} [current_design]
+set_property -dict {PACKAGE_PIN E3 IOSTANDARD LVCMOS33} [get_ports clk]
+set_property src_info {type:XDC file:2 line:73 export:INPUT save:INPUT read:READ} [current_design]
+set_property -dict {PACKAGE_PIN C12 IOSTANDARD LVCMOS33} [get_ports arstn]
+set_property src_info {type:XDC file:2 line:162 export:INPUT save:INPUT read:READ} [current_design]
+set_property -dict { PACKAGE_PIN F14   IOSTANDARD LVCMOS33 } [get_ports { tx_o }]; #IO_L5N_T0_AD9N_15 Sch=acl_mosi

@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="uart_tx_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="uart_tx_tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="536,214,998 ps"></ZoomStartTime>
+      <ZoomEndTime time="536,215,014 ps"></ZoomEndTime>
+      <Cursor1Time time="536,215,000 ps"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="487"></NameColumnWidth>
+      <ValueColumnWidth column_width="100"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="33" />
+   <wvobject fp_name="/uart_tx_tb/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/uart_tx_tb/arstn" type="logic">
+      <obj_property name="ElementShortName">arstn</obj_property>
+      <obj_property name="ObjectShortName">arstn</obj_property>
+   </wvobject>
+   <wvobject fp_name="/uart_tx_tb/data_i" type="array">
+      <obj_property name="ElementShortName">data_i[15:0]</obj_property>
+      <obj_property name="ObjectShortName">data_i[15:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/uart_tx_tb/valid_i" type="logic">
+      <obj_property name="ElementShortName">valid_i</obj_property>
+      <obj_property name="ObjectShortName">valid_i</obj_property>
+   </wvobject>
+   <wvobject fp_name="/uart_tx_tb/ready_o" type="logic">
+      <obj_property name="ElementShortName">ready_o</obj_property>
+      <obj_property name="ObjectShortName">ready_o</obj_property>
+   </wvobject>
+   <wvobject fp_name="/uart_tx_tb/tx_o" type="logic">
+      <obj_property name="ElementShortName">tx_o</obj_property>
+      <obj_property name="ObjectShortName">tx_o</obj_property>
+   </wvobject>
+   <wvobject fp_name="/uart_tx_tb/baud_rate" type="array">
+      <obj_property name="ElementShortName">baud_rate[31:0]</obj_property>
+      <obj_property name="ObjectShortName">baud_rate[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/uart_tx_tb/tdata_width" type="array">
+      <obj_property name="ElementShortName">tdata_width[31:0]</obj_property>
+      <obj_property name="ObjectShortName">tdata_width[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/uart_tx_tb/clk_rate" type="array">
+      <obj_property name="ElementShortName">clk_rate[31:0]</obj_property>
+      <obj_property name="ObjectShortName">clk_rate[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/uart_tx_tb/clk_period" type="array">
+      <obj_property name="ElementShortName">clk_period[31:0]</obj_property>
+      <obj_property name="ObjectShortName">clk_period[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/uart_tx_tb/dut/packetizer_inst/ready_i" type="logic">
+      <obj_property name="ElementShortName">ready_i</obj_property>
+      <obj_property name="ObjectShortName">ready_i</obj_property>
+   </wvobject>
+   <wvobject fp_name="/uart_tx_tb/dut/packetizer_inst/valid_o" type="logic">
+      <obj_property name="ElementShortName">valid_o</obj_property>
+      <obj_property name="ObjectShortName">valid_o</obj_property>
+   </wvobject>
+   <wvobject fp_name="/uart_tx_tb/dut/valid_i" type="logic">
+      <obj_property name="ElementShortName">valid_i</obj_property>
+      <obj_property name="ObjectShortName">valid_i</obj_property>
+   </wvobject>
+   <wvobject fp_name="/uart_tx_tb/dut/uart_tx_inst/data_shift_buffer" type="array">
+      <obj_property name="ElementShortName">data_shift_buffer[7:0]</obj_property>
+      <obj_property name="ObjectShortName">data_shift_buffer[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/uart_tx_tb/dut/uart_tx_inst/data_intermediate" type="array">
+      <obj_property name="ElementShortName">data_intermediate[7:0]</obj_property>
+      <obj_property name="ObjectShortName">data_intermediate[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/uart_tx_tb/dut/packetizer_inst/byte_o" type="array">
+      <obj_property name="ElementShortName">byte_o[7:0]</obj_property>
+      <obj_property name="ObjectShortName">byte_o[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/uart_tx_tb/dut/packetizer_inst/buffer" type="array">
+      <obj_property name="ElementShortName">buffer[15:0]</obj_property>
+      <obj_property name="ObjectShortName">buffer[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/uart_tx_tb/dut/uart_tx_inst/current_state" type="array">
+      <obj_property name="ElementShortName">current_state[3:0]</obj_property>
+      <obj_property name="ObjectShortName">current_state[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/uart_tx_tb/dut/packetizer_inst/current_state" type="array">
+      <obj_property name="ElementShortName">current_state[1:0]</obj_property>
+      <obj_property name="ObjectShortName">current_state[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/uart_tx_tb/dut/uart_tx_inst/data_shift_buffer" type="array">
+      <obj_property name="ElementShortName">data_shift_buffer[7:0]</obj_property>
+      <obj_property name="ObjectShortName">data_shift_buffer[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/uart_tx_tb/dut/packetizer_inst/next_state" type="array">
+      <obj_property name="ElementShortName">next_state[1:0]</obj_property>
+      <obj_property name="ObjectShortName">next_state[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/uart_tx_tb/dut/packetizer_inst/byte_o" type="array">
+      <obj_property name="ElementShortName">byte_o[7:0]</obj_property>
+      <obj_property name="ObjectShortName">byte_o[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/uart_tx_tb/dut/uart_tx_inst/current_state" type="array">
+      <obj_property name="ElementShortName">current_state[3:0]</obj_property>
+      <obj_property name="ObjectShortName">current_state[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/uart_tx_tb/dut/packetizer_inst/current_state" type="array">
+      <obj_property name="ElementShortName">current_state[1:0]</obj_property>
+      <obj_property name="ObjectShortName">current_state[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/uart_tx_tb/dut/packetizer_inst/byte_o" type="array">
+      <obj_property name="ElementShortName">byte_o[7:0]</obj_property>
+      <obj_property name="ObjectShortName">byte_o[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/uart_tx_tb/dut/uart_tx_inst/data_intermediate" type="array">
+      <obj_property name="ElementShortName">data_intermediate[7:0]</obj_property>
+      <obj_property name="ObjectShortName">data_intermediate[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/uart_tx_tb/dut/uart_tx_inst/data_shift_buffer" type="array">
+      <obj_property name="ElementShortName">data_shift_buffer[7:0]</obj_property>
+      <obj_property name="ObjectShortName">data_shift_buffer[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/uart_tx_tb/dut/packetizer_inst/bytes_done" type="logic">
+      <obj_property name="ElementShortName">bytes_done</obj_property>
+      <obj_property name="ObjectShortName">bytes_done</obj_property>
+   </wvobject>
+   <wvobject fp_name="/uart_tx_tb/dut/uart_tx_inst/data_done" type="logic">
+      <obj_property name="ElementShortName">data_done</obj_property>
+      <obj_property name="ObjectShortName">data_done</obj_property>
+   </wvobject>
+   <wvobject fp_name="/uart_tx_tb/dut/uart_tx_inst/data_counter" type="array">
+      <obj_property name="ElementShortName">data_counter[2:0]</obj_property>
+      <obj_property name="ObjectShortName">data_counter[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/uart_tx_tb/dut/uart_tx_inst/baud_done" type="logic">
+      <obj_property name="ElementShortName">baud_done</obj_property>
+      <obj_property name="ObjectShortName">baud_done</obj_property>
+   </wvobject>
+   <wvobject fp_name="/uart_tx_tb/dut/uart_tx_inst/current_state" type="array">
+      <obj_property name="ElementShortName">current_state[3:0]</obj_property>
+      <obj_property name="ObjectShortName">current_state[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/uart_tx_tb/dut/uart_tx_inst/next_state" type="array">
+      <obj_property name="ElementShortName">next_state[3:0]</obj_property>
+      <obj_property name="ObjectShortName">next_state[3:0]</obj_property>
+   </wvobject>
+</wave_config>

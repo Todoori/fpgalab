@@ -1,0 +1,25 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Mon Jun  2 18:26:59 2025
+# Process ID         : 35652
+# Current directory  : C:/Users/moham/Desktop/Fpga/Experiment_3/Experiment_3.srcs/utils_1/imports/synth_1
+# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent66504 C:\Users\moham\Desktop\Fpga\Experiment_3\Experiment_3.srcs\utils_1\imports\synth_1\top_VGA_Screen.dcp
+# Log file           : C:/Users/moham/Desktop/Fpga/Experiment_3/Experiment_3.srcs/utils_1/imports/synth_1/vivado.log
+# Journal file       : C:/Users/moham/Desktop/Fpga/Experiment_3/Experiment_3.srcs/utils_1/imports/synth_1\vivado.jou
+# Running On         : moham
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26100
+# Processor Detail   : AMD Ryzen 9 8945HS w/ Radeon 780M Graphics
+# CPU Frequency      : 3992 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 16
+# Host memory        : 29843 MB
+# Swap memory        : 23318 MB
+# Total Virtual      : 53162 MB
+# Available Virtual  : 6292 MB
+#-----------------------------------------------------------
+start_gui
+open_checkpoint C:/Users/moham/Desktop/Fpga/Experiment_3/Experiment_3.srcs/utils_1/imports/synth_1/top_VGA_Screen.dcp

@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1750846897">
+  <File Type="PA-DCP" Name="uart_axi_JTAG_wrapper.dcp"/>
+  <File Type="PA-TCL" Name="uart_axi_JTAG_wrapper.tcl"/>
+  <File Type="REPORTS-TCL" Name="uart_axi_JTAG_wrapper_reports.tcl"/>
+  <File Type="INIT-TIMING" Name="uart_axi_JTAG_wrapper_timing_summary_init.rpt"/>
+  <File Type="OPT-DCP" Name="uart_axi_JTAG_wrapper_opt.dcp"/>
+  <File Type="OPT-DRC" Name="uart_axi_JTAG_wrapper_drc_opted.rpt"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="uart_axi_JTAG_wrapper_methodology_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="uart_axi_JTAG_wrapper.hwdef"/>
+  <File Type="OPT-TIMING" Name="uart_axi_JTAG_wrapper_timing_summary_opted.rpt"/>
+  <File Type="OPT-RQA-PB" Name="uart_axi_JTAG_wrapper_rqa_opted.pb"/>
+  <File Type="PWROPT-DCP" Name="uart_axi_JTAG_wrapper_pwropt.dcp"/>
+  <File Type="PWROPT-DRC" Name="uart_axi_JTAG_wrapper_drc_pwropted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="uart_axi_JTAG_wrapper_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="uart_axi_JTAG_wrapper_placed.dcp"/>
+  <File Type="PLACE-IO" Name="uart_axi_JTAG_wrapper_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="uart_axi_JTAG_wrapper_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="uart_axi_JTAG_wrapper_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="uart_axi_JTAG_wrapper_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="uart_axi_JTAG_wrapper_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="uart_axi_JTAG_wrapper_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="uart_axi_JTAG_wrapper_incremental_reuse_pre_placed.rpt"/>
+  <File Type="PLACE-TIMING" Name="uart_axi_JTAG_wrapper_timing_summary_placed.rpt"/>
+  <File Type="PLACE-RQA-PB" Name="uart_axi_JTAG_wrapper_rqa_placed.pb"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="uart_axi_JTAG_wrapper_postplace_pwropt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="uart_axi_JTAG_wrapper_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="uart_axi_JTAG_wrapper_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="uart_axi_JTAG_wrapper_drc_physopted.rpt"/>
+  <File Type="PHYSOPT-TIMING" Name="uart_axi_JTAG_wrapper_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="uart_axi_JTAG_wrapper_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="uart_axi_JTAG_wrapper_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="uart_axi_JTAG_wrapper_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="uart_axi_JTAG_wrapper_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="uart_axi_JTAG_wrapper_drc_routed.pb"/>
+  <File Type="ROUTE-DRC-RPX" Name="uart_axi_JTAG_wrapper_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="uart_axi_JTAG_wrapper_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="uart_axi_JTAG_wrapper_methodology_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="uart_axi_JTAG_wrapper_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-PWR" Name="uart_axi_JTAG_wrapper_power_routed.rpt"/>
+  <File Type="ROUTE-PWR-SUM" Name="uart_axi_JTAG_wrapper_power_summary_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="uart_axi_JTAG_wrapper_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="uart_axi_JTAG_wrapper_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="uart_axi_JTAG_wrapper_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="uart_axi_JTAG_wrapper_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="uart_axi_JTAG_wrapper_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="uart_axi_JTAG_wrapper_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="uart_axi_JTAG_wrapper_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="uart_axi_JTAG_wrapper_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW" Name="uart_axi_JTAG_wrapper_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="uart_axi_JTAG_wrapper_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="uart_axi_JTAG_wrapper_bus_skew_routed.rpx"/>
+  <File Type="ROUTE-RQS-PB" Name="uart_axi_JTAG_wrapper_rqs_routed.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="uart_axi_JTAG_wrapper_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="uart_axi_JTAG_wrapper_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="JTAG_wrapper_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="JTAG_wrapper_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="JTAG_wrapper_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="JTAG_wrapper_bus_skew_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="JTAG_wrapper_bus_skew_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="JTAG_wrapper_bus_skew_postroute_physopted.rpx"/>
+  <File Type="BG-BIT" Name="uart_axi_JTAG_wrapper.bit"/>
+  <File Type="BG-BIN" Name="uart_axi_JTAG_wrapper.bin"/>
+  <File Type="BITSTR-MSK" Name="uart_axi_JTAG_wrapper.msk"/>
+  <File Type="BITSTR-RBT" Name="uart_axi_JTAG_wrapper.rbt"/>
+  <File Type="BITSTR-NKY" Name="uart_axi_JTAG_wrapper.nky"/>
+  <File Type="BITSTR-BMM" Name="uart_axi_JTAG_wrapper_bd.bmm"/>
+  <File Type="BITSTR-MMI" Name="uart_axi_JTAG_wrapper.mmi"/>
+  <File Type="PDI-FILE" Name="uart_axi_JTAG_wrapper.pdi"/>
+  <File Type="BOOT-PDI-FILE" Name="uart_axi_JTAG_wrapper_boot.pdi"/>
+  <File Type="PL-PDI-FILE" Name="uart_axi_JTAG_wrapper_pld.pdi"/>
+  <File Type="RCFI_FILE" Name="uart_axi_JTAG_wrapper.rcfi"/>
+  <File Type="CFI_FILE" Name="uart_axi_JTAG_wrapper.cfi"/>
+  <File Type="RNPI_FILE" Name="uart_axi_JTAG_wrapper.rnpi"/>
+  <File Type="NPI_FILE" Name="uart_axi_JTAG_wrapper.npi"/>
+  <File Type="RBD_FILE" Name="uart_axi_JTAG_wrapper.rbd"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="uart_axi_JTAG_wrapper.ltx"/>
+  <File Type="BITSTR-SYSDEF" Name="uart_axi_JTAG_wrapper.sysdef"/>
+  <File Type="BG-BGN" Name="uart_axi_JTAG_wrapper.bgn"/>
+  <File Type="BG-DRC" Name="uart_axi_JTAG_wrapper.drc"/>
+  <File Type="RDI-RDI" Name="uart_axi_JTAG_wrapper.vdi"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="ROUTE-RQS" Name="uart_axi_JTAG_wrapper_routed.rqs"/>
+  <File Type="POSTROUTE-PHYSOPT-RQS" Name="uart_axi_JTAG_wrapper_postroute_physopted.rqs"/>
+  <File Type="ROUTE-RQS-RPT" Name="route_report_qor_suggestions_0.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-RQS-RPT" Name="postroute_physopt_report_qor_suggestions_0.rpt"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/ip/jtag_axi_0/jtag_axi_0.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Trans.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Sources/pkg.sv">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Sources/pkg.sv"/>
+        <Attr Name="ImportTime" Val="1748437953"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Sources/Top_VGA_Screen.sv">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Sources/Top_VGA_Screen.sv"/>
+        <Attr Name="ImportTime" Val="1748443182"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/JTAG/JTAG.bd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/ip/xfft_0_1/xfft_0.xci">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PGENDIR/sources_1/bd/JTAG/hdl/JTAG_wrapper.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/ip/mig_7series_0/mig_a.prj">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="ScopedToCell" Val="mig_7series_0"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../AppData/Roaming/Xilinx/ip_repo/component.xml">
+      <FileInfo SFType="IPXACT"/>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="uart_axi_JTAG_wrapper"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1" RelGenDir="$PGENDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/imports/imports/new/timing.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../ASA_1/ASA.srcs/constrs_1/imports/new/timing.xdc"/>
+        <Attr Name="ImportTime" Val="1746018452"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/constrs_1/imports/imports/Downloads/Nexys-A7-100T-Master.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../ASA_1/ASA.srcs/constrs_1/imports/Downloads/Nexys-A7-100T-Master.xdc"/>
+        <Attr Name="ImportTime" Val="1746707799"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TargetConstrsFile" Val="$PSRCDIR/constrs_1/imports/imports/Downloads/Nexys-A7-100T-Master.xdc"/>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1" RelGenDir="$PGENDIR/utils_1">
+    <Filter Type="Utils"/>
+    <File Path="$PSRCDIR/utils_1/imports/synth_1/top_VGA_Screen.dcp">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedInSteps" Val="synth_1"/>
+        <Attr Name="AutoDcp" Val="1"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2024"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="JTAG_uart_axi_wrapper_0_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="JTAG_clk_wiz_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="JTAG_jtag_axi_0_0"/>
+</GenRun>
